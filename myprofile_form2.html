@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+ <style>
+  * {
+   padding: 0;
+   margin: 0;
+  }
+
+  .extrah1 h1{
+   color: #ff0000;
+   font-weight:bold;
+   text-decoration-line:underline;
+   font-size:34px;
+  }
+
+  #mainTable {
+   color: #700000;
+    width: 100%;
+   }
+
+  #mainTable a{
+   color: #ff0000;
+   text-decoration-line: underline;
+  }
+
+  #mainTable td{
+   font-weight:bold;
+  }
+
+  #mainTable thead th{
+   text-align: center;
+   font-weight:bold;
+   text-decoration-line:underline;
+   font-size:34px;
+  }
+
+  #secondTable {
+   color: #006000;
+   width: 100%;
+  }
+
+  #secondTable a{
+   color: #00ff00;
+   text-decoration-line: underline;
+  }
+
+  #secondTable td{
+   font-weight:bold;
+  }
+
+  #secondTable thead th{
+   text-align: center;
+   font-weight:bold;
+   text-decoration-line:underline;
+   font-size:34px;
+  }
+ </style>
+
+
+ <head>
+ <title>Profile page for JavaGuru PHP Course</title>
+ </head>
+ <body>
+  <h1 class="extrah1">Student profile</h1><br>
+  <hr>
+  <table id="mainTable" style="width:100%">
+      <thead><th>Main information</th></thead>
+   <tbody>
+    <tr>
+     <td>Photo</td>
+     <td><img src="https://thumbs.dreamstime.com/x/businessman-bow-arrow-concept-determination-business-35566593.jpg" alt="Profile photo" style="width:100px;height:70px;"></td> 
+    </tr>
+    <tr>
+      <td>Name</td>
+     <td>Aleksandrs</td>
+    </tr>
+    <tr>
+     <td>Surname</td>
+     <td>Bredis</td>
+    </tr> 
+    <tr>
+     <td>Position</td>
+     <td >Software developer</td> 
+    </tr>  
+    <tr>
+     <td>e-mail</td>
+     <td><a href="mailto:bred2005@inbox.lv?subject=E-mail test" >bred2005@inbox.lv</a> </td>
+    </tr>
+    <tr>
+     <td>Phone</td>
+     <td>+37128644980</td> 
+    </tr> 
+   <tbody>
+  </table>
+  <hr>
+  <table id="secondTable" style="width:100%">
+      <thead><th>Additional information</th></thead>
+   <tbody>
+    <tr>
+     <td>Work</td>
+     <td><a href="http://www.dnb.lv">DNB</a></td>
+    </tr>
+    <tr>
+     <td>Hobbies</td>
+     <td><a href="http://www.sphereserver.com">Sphereserver</a>,<a href="http://antclub.org/">Ant-Club</a></td>
+    </tr> 
+    <tr>
+     <td>Interests</td>
+     <td><a href="https://en.wikipedia.org/wiki/Robotic_process_automation">RPA</a></td>
+    </tr>  
+   <tbody>
+  </table>
+  <h1 class="extrah1">Comments:</h1><br>
+  <form action='form.php' method='POST' >
+   <input name='name1' type='text'><label for="name1">Your name:</label><br>
+   <select name='ocenka'>
+    <option value="1">1</option>
+    <option value="2">2</option>
+	<option value="3">3</option>
+    <option value="4">4</option>
+	<option value="5">5</option>
+   </select><label for="ocenka">Your ocenka:</label><br>
+   <input type="radio" name="Friend" value="John">John<br>
+   <input type="radio" name="Friend" value="John1">John1<br>
+   <input type="radio" name="Friend" value="John2">John2<br>
+   <textarea name="message" rows="10" cols="30">
+      Nice page!
+   </textarea>
+   <input name='sdd' type='submit' value="ENTER">
+   <input type='reset' value='Reset' name='reset'>
+ </form>
+ </body>
+</html>
